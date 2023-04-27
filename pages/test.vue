@@ -1,4 +1,5 @@
-<script setup>
+<script setup lang="ts">
+
 import { ref } from 'vue'
 import {
   TransitionRoot,
@@ -7,7 +8,7 @@ import {
   DialogPanel,
   DialogTitle,
 } from '@headlessui/vue'
-
+const counter = useCounter()
 const isOpen = ref(false)
 
 function closeModal() {
